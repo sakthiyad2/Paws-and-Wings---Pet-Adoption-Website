@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Wings Adoption</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="nav">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <h2>Paws & Wings</h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="pets.html">Pets</a>
+            <a href="donate.html">Donate</a>
+            <a href="login.html">Login</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </div>
+</header>
+
+<!-- BANNER -->
+<section class="banner">
+    <img src="banner1.png" class="slide active" alt="Banner 1">
+    <img src="banner2.png" class="slide" alt="Banner 2">
+    <img src="banner3.png" class="slide" alt="Banner 3">
+    <img src="banner4.png" class="slide" alt="Banner 4">
+
+    <div class="bannerText">
+        <h1>Give a Pet a Loving Home</h1>
+        <p>Adopt • Care • Love</p>
+        <a href="pets.html" class="btn">Adopt Now</a>
+    </div>
+</section>
+
+<!-- VIDEO SECTION -->
+<section class="videoSection">
+    <h2>See Our Pets in Action</h2>
+    <p>Watch how rescued pets find loving homes.</p>
+
+    <div class="videoContainer">
+        <video controls>
+            <source src="dog1 video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+<!-- INFO SECTION -->
+<section class="info">
+    <h2>Why Adopt?</h2>
+
+    <div class="infoGrid">
+        <div class="infoCard">
+            <h3>Save Lives</h3>
+            <p>Adopting pets gives homeless animals a second chance.</p>
+        </div>
+
+        <div class="infoCard">
+            <h3>Loyal Friends</h3>
+            <p>Pets bring joy, love and companionship.</p>
+        </div>
+
+        <div class="infoCard">
+            <h3>Reduce Strays</h3>
+            <p>Adoption helps reduce stray animals.</p>
+        </div>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+    <div class="stat">
+        <h2 id="petsCount">0</h2>
+        <p>Pets Adopted</p>
+    </div>
+
+    <div class="stat">
+        <h2 id="volCount">0</h2>
+        <p>Volunteers</p>
+    </div>
+
+    <div class="stat">
+        <h2 id="donCount">0</h2>
+        <p>Donations</p>
+    </div>
+</section>
+
+<!-- FEATURED PETS -->
+<section class="featured-pets-section">
+    <h2 class="petTitle">Meet Our Featured Pets</h2>
+
+    <div class="pets-carousel">
+
+        <!-- PET 1 -->
+        <div class="pet-card active">
+            <div class="pet-image">
+                <img src="stdog11.png" alt="Max">
+                <div class="pet-status">Urgent</div>
+            </div>
+
+            <div class="pet-info">
+                <h3>Max - Labrador</h3>
+                <p>2 Years • Loves walks & cuddles</p>
+                <a href="pets.html" class="btn">Meet Max</a>
+            </div>
+        </div>
+
+        <!-- PET 2 -->
+        <div class="pet-card">
+            <div class="pet-image">
+                <img src="cat10.png" alt="Whiskers">
+            </div>
+
+            <div class="pet-info">
+                <h3>Whiskers - Tabby</h3>
+                <p>1 Year • Playful & friendly</p>
+                <a href="pets.html" class="btn">Meet Whiskers</a>
+            </div>
+        </div>
+
+        <!-- PET 3 -->
+        <div class="pet-card">
+            <div class="pet-image">
+                <img src="bird11.png" alt="Sunny">
+            </div>
+
+            <div class="pet-info">
+                <h3>Sunny - Parrot</h3>
+                <p>1.5 Years • Loves to sing</p>
+                <a href="pets.html" class="btn">Meet Sunny</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CAROUSEL NAV -->
+    <div class="carousel-nav">
+        <button onclick="changePet(-1)">‹</button>
+        <span id="pet-indicator">1 / 3</span>
+        <button onclick="changePet(1)">›</button>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h3>Paws & Wings Adoption</h3>
+    <p>Helping pets find loving homes</p>
+</footer>
+
+<!-- SCROLL TO TOP -->
+<button onclick="topFunction()" id="topBtn">↑</button>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
