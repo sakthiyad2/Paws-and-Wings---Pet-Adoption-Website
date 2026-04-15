@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pets</title>
+<link rel="stylesheet" href="style.css">
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swa
+p" rel="stylesheet">
+</head>
+<body>
+<header>
+<div class="nav">
+<div class="logo">
+<img src="logo.png" alt="Paws & Wings logo">
+<h2>Paws & Wings</h2>
+</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="donate.html">Donate</a>
+<a href="login.html">Login</a>
+<a href="contactus.html">Contact Us</a>
+</nav>
+</div>
+</header>
+<section class="searchBox">
+<input type="text" id="searchPet" placeholder="Search pets..." onkeyup="searchPet()">
+</section><br>
+<section class="filters">
+<button onclick="filterPets('all')">All</button>
+<button onclick="filterPets('cat')">Cats</button>
+<button onclick="filterPets('dog')">Dogs</button>
+<button onclick="filterPets('bird')">Birds</button>
+<button onclick="filterPets('hamster')">Hamsters</button>
+</section>
+<section class="pets">
+<!-- Cats -->
+<div class="card cat"><img src="cat1.jpg" alt="Cat1"><h3>British shorthair</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card cat"><img src="cat2.jpg" alt="Cat2"><h3>Siamese</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card cat"><img src="cat3.png" alt="Cat3"><h3>Persian</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card cat"><img src="cat4.jpg" alt="Cat4"><h3>Maine Coon</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card cat"><img src="cat5.jpg" alt="Cat5"><h3>Bengal</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card cat"><img src="cat6.jpg" alt="Cat6"><h3>Domestic Shorthair</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card cat"><img src="cat7.jpg" alt="Cat7"><h3>Bengal Cat</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card cat"><img src="cat8.jpg" alt="Cat8"><h3>Grey Cat</h3><button
+class="adoptBtn">Adopt</button></div>
+<!-- Dogs -->
+<div class="card dog"><img src="stdog1.jpg" alt="Dog 1"><h3>Labrador Retriever</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card dog"><img src="stdog2.png" alt="Dog 2"><h3>German Shepherd</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card dog"><img src="stdog3.png" alt="Dog 3"><h3>Boxer</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card dog"><img src="stdog4.png" alt="Dog 4"><h3>Golden Retriever</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card dog"><img src="stdog5.png" alt="Dog 5"><h3>Beagle</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card dog"><img src="stdog6.png" alt="Dog 6"><h3>pug</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card dog"><img src="stdog7.jpg" alt="Dog 7"><h3>Chippiparai</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card dog"><img src="stdog8.jpg" alt="Dog 8"><h3>Rajapalayam</h3><button
+class="adoptBtn">Adopt</button></div>
+<!-- Birds -->
+<div class="card bird"><img src="bird1.jpg" alt="Bird 1"><h3>Cocktiel</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card bird"><img src="bird2.jpg" alt="Bird 2"><h3>Turkey</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card bird"><img src="bird3.jpg" alt="Bird 3"><h3>Rooster</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card bird"><img src="bird4.jpg" alt="Bird 4"><h3>Parrot</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card bird"><img src="bird5.jpg" alt="Bird 5"><h3>Duck</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card bird"><img src="bird6.jpg" alt="Bird 6"><h3>Hen</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card bird"><img src="bird7.jpg" alt="Bird 7"><h3>Love Bird</h3><button
+class="adoptBtn">Adopt</button></div>
+<div class="card bird"><img src="bird8.jpg" alt="Bird 8"><h3>Baby Parrot</h3><button
+class="adoptBtn">Adopt</button></div>
+<!-- Hamsters -->
+<div class="card hamster"><img src="lam1.jpg" alt="Hamster 1"><h3>Syrian
+Hamster</h3><button class="adoptBtn">Adopt</button></div>
+<div class="card hamster"><img src="lam2.jpg" alt="Hamster 2"><h3>Roborovski
+Hamster</h3><button class="adoptBtn">Adopt</button></div>
+<div class="card hamster"><img src="lam3.jpg" alt="Hamster 3"><h3>Dwarf
+Hamster</h3><button class="adoptBtn">Adopt</button></div>
+<div class="card hamster"><img src="lam4.jpg" alt="Hamster 4"><h3>Grey
+Hamster</h3><button class="adoptBtn">Adopt</button></div>
+</section>
+<div id="modal" class="modal">
+<div class="formBox">
+<span onclick="closeForm()">X</span>
+<h2 id="petName">Adoption Form</h2>
+<form onsubmit="submitAdoption(event)">
+<input type="text" placeholder="Name" required>
+<input type="email" placeholder="Email" required>
+<input type="text" placeholder="Phone" required>
+<input type="text" placeholder="Address" required>
+<button class="btn" type="submit">Submit</button>
+<p id="successMsg" style="color:green; display:none; margin-top:10px;">
+Your adoption form has been submitted
+</p>
+</form>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
